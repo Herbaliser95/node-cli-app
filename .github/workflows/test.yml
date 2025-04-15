@@ -1,15 +1,23 @@
- name: build-test-deploy
- on: push
+name: test
+on: push
 
- jobs:
+jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
-      - name: use node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - run: npm install
-      - run: npm run test
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests with coverage
+        run: npm test -- --coverage
+
+      - name: Output coverage results to console
+        run: cat ./coverage/lcov-report/index.html || echo "Coverage report not found"
