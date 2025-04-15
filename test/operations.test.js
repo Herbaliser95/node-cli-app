@@ -3,7 +3,7 @@ const operations = require("../src/operations/operations");
 describe("operations", () => {
   describe("add", () => {
     test("adds two positive numbers", () => {
-      expect(operations.add(2, 3)).toBe(6);
+      expect(operations.add(2, 3)).toBe(5);
     });
 
     test("adds a positive and a negative number", () => {
