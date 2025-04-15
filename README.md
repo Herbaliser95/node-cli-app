@@ -14,11 +14,11 @@ This project is a simple command-line interface (CLI) application built with Nod
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/node-cli-app.git
+   git clone https://github.com/yourusername/ssgs-calc.git
    ```
 2. Navigate to the project directory:
    ```
-   cd node-cli-app
+   cd ssgs-calc
    ```
 3. Install the dependencies:
    ```
