@@ -23,4 +23,4 @@ jobs:
       # Esegui il pull da un altro branch
       - name: Pull from feature branch
         run: |
-          git pull origin feature-branch
+          git pull origin try-auto-pull-from-main
