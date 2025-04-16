@@ -1,0 +1,26 @@
+name: Pull from feature branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pull_from_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout del repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Configurazione dell'utente Git
+      - name: Set up Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Esegui il pull da un altro branch
+      - name: Pull from feature branch
+        run: |
+          git pull origin feature-branch
