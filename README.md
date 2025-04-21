@@ -35,6 +35,18 @@ node src/index.js
 
 Upon launching, the application will display a welcome message and a list of available operations. Follow the prompts to select an operation and provide the necessary parameters.
 
+To run tests, use the following command:
+
+```
+npm test
+```
+
+To run tests with coverage, use the following command:
+
+```
+npm test -- --coverage
+```
+
 ## Available Operations
 
 - **Add**: Adds two numbers together.

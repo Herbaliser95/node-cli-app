@@ -29,7 +29,7 @@ function displayWelcomeMessage() {
 }
 
 function promptForOperation() {
-  rl.question("Select an operation (1-4): ", (operation) => {
+  rl.question("Select an operation (1-5): ", (operation) => {
     const selectedOperation = operations[operation];
     if (selectedOperation) {
       promptForParameters(selectedOperation);
