@@ -10,6 +10,12 @@ This project is a simple command-line interface (CLI) application built with Nod
 - [Contributing](#contributing)
 - [License](#license)
 
+## Prerequisites
+
+Make sure you have Node.js (version 16 or higher) and npm installed. You can check your Node.js version with the following command:
+```
+node -v
+```
 ## Installation
 
 1. Clone the repository:
@@ -30,7 +36,7 @@ This project is a simple command-line interface (CLI) application built with Nod
 To run the application, use the following command:
 
 ```
-node src/index.js
+node start
 ```
 
 Upon launching, the application will display a welcome message and a list of available operations. Follow the prompts to select an operation and provide the necessary parameters.
@@ -41,11 +47,6 @@ To run tests, use the following command:
 npm test
 ```
 
-To run tests with coverage, use the following command:
-
-```
-npm test -- --coverage
-```
 
 ## Available Operations
 
