@@ -39,7 +39,7 @@ jobs:
         run: npm test -- --coverage
 
       - name: Output coverage results to console
-        run: cat ./coverage/lcov-report/index.html || echo "Coverage report not found"
+        run: npx jest --coverage --coverageReporters=text-summary
   
   deploy:
      needs: test
