@@ -40,6 +40,12 @@ jobs:
 
       - name: Output coverage results to console
         run: npx jest --coverage --coverageReporters=text-summary
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/
   
   deploy:
      needs: test
