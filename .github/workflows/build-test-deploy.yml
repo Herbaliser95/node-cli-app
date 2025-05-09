@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - fixing-issue9
+      - versioning
   pull_request:
 
 jobs:
@@ -16,6 +16,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18.x'
+        cache: 'npm'
     - run: npm install
     - run: npm run build
   test:
@@ -29,6 +30,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -63,6 +65,7 @@ jobs:
           uses: actions/setup-node@v3
           with:
              node-version: '18.x'
+             cache: 'npm'
 
         - name: configure github pages
           uses: actions/configure-pages@v3
