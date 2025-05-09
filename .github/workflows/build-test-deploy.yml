@@ -1,5 +1,10 @@
 name: build-test-deploy
-on: push
+on:
+  push:
+    branches:
+      - main
+      - fixing-issue9
+  pull_request:
 
 jobs:
   build:
